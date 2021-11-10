@@ -36,7 +36,7 @@ public Action Timer_Control(Handle timer, any data)
 	{
 		QueryClientConVar(client, "m_yaw", OnYawRetrieved);
 		QueryClientConVar(client, "sensitivity", OnSensitivityRetrieved);
-		if (c_mYaw[client] / c_Sens[client] >= 90)
+		if (c_mYaw[client] / c_Sens[client] >= 90.0)
 		{
 			c_mYaw[client] = 0.0;
 			c_Sens[client] = 0.0;
