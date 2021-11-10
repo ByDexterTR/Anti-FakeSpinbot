@@ -20,7 +20,7 @@ public Plugin myinfo =
 
 public void OnPluginStart()
 {
-	Penaltytype = CreateConVar("sm__fsb_penalty_type", "0", "0 = Kick | 1 = Ban", 0, true, 0.0, true, 1.0);
+	Penaltytype = CreateConVar("sm_fsb_penalty_type", "0", "0 = Kick | 1 = Ban", 0, true, 0.0, true, 1.0);
 	Bantime = CreateConVar("sm_fsb_ban_time", "10", "if it has to be banned, how many minutes? [ 0 = Perma ]", 0, true, 0.0);
 	AutoExecConfig(true, "Anti-Fakespinbot", "ByDexter");
 }
